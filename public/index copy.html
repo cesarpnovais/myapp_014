@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3P PLANNER</title>
+    
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="vendors/plyr/plyr.css" rel="stylesheet">
+    
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff"> 
+    
+    <!-- bootstrap -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+  </head>
+
+  <body>
+    <!-- Main Content -->
+    <main class="main" id="top">
+      <!-- Main Content -->
+        <nav class="navbar navbar-expand-lg fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+          <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"> <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="50" /><span class="text-primary fs-4 ps-2">3P PLANNER</span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+              <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                  <h4 class="text-white fs-2 fs-md-3">
+                    <i class="fa-solid fa-car"></i>
+                    <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-link " aria-current="page" href="#home">HOME</i></a>
+                      <a class="nav-link " aria-current="page" href="#planner">PLANNER</i></a>
+                    </div>
+                  </h4>
+              </div>
+              <form class="ps-lg-5">
+                <button class="btn btn-lg btn-outline-primary order-0" type="submit">Sign In</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!-- section home -->
+        <section id="home" class="py-0">
+          <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;background-size:contain;"></div>
+          <div class="container position-relative">
+            <div class="row align-items-center min-vh-75 my-lg-8">
+              <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
+                <h1 class="mb-4 display-1 lh-sm">Travel around <br class="d-block d-lg-none d-xl-block" />the world</h1>
+                <p class="mt-4 mb-5 fs-1 lh-base">Plan and book your perfect trip with expert advice, <br class="d-none d-lg-block" />travel tips, destination information and <br class="d-none d-lg-block" />inspiration from us.</p><a class="btn btn-lg btn-primary hover-top" href="#" role="button">Sign Up Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- section home -->
+        <section id="planner">
+          <div class="bg-holder" style="background-image:url(assets/img//gallery/booking.png);background-position:center;background-size:cover;"></div>
+          <div class="container">
+            <div class="row min-vh-75">
+              <div class="col-12 text-white">
+                <div class="d-flex flex-column flex-center">
+                  <h1 class="text-white fs-2 fs-sm-4 fs-lg-6 fw-bold">Define your itinerary</h1>
+                </div>
+                <template id="resultstemplate">
+                  <option>America Do Norte</option>
+                  <option>America Central</option>
+                  <option>America do Sul</option>
+                  <option>Europa</option>
+                  <option>Africa</option>
+                  <option>Asia</option>
+                  <option>Oceania</option>
+                  <!-- América do Norte -->
+                  <option>Canadá</option>
+                  <option>Estados Unidos</option>
+                  <option>México</option>
+                  <!-- América Central -->
+                  <option>Equador</option>
+                  <option>El Salvador</option>
+                  <option>Guatemala</option>
+                  <option>Guiana</option>
+                  <option>Haiti</option>
+                  <option>Honduras</option>
+                  <option>Jamaica</option>
+                  <option>México</option>
+                  <option>Nicarágua</option>
+                  <option>Panamá</option>
+                  <option>República Dominicana</option>
+                  <option>Costa Rica</option>
+                  <option>Cuba</option>
+                  <option>Suriname</option>
+                  <option>Venezuela</option>
+                  <!-- América Central -->
+                  <option>Belize</option>
+                  <option>Argentina</option>
+                  <option>Bolívia</option>
+                  <option>Brasil</option>
+                  <option>Chile</option>
+                  <option>Colômbia</option>
+                  <option>Uruguai</option>
+                  <option>Paraguai</option>
+                  <option>Peru</option>
+                  <!-- Estados Brasil -->
+                  <option>Acre</option>
+                  <option>Alagoas</option>
+                  <option>Amapá</option>
+                  <option>Amazonas</option>
+                  <option>Bahia</option>
+                  <option>Ceará</option>
+                  <option>Espírito Santo</option>
+                  <option>Goiás</option>
+                  <option>Cuiabá</option>
+                  <option>Maranhão</option>
+                  <option>Mato Grosso</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Minas Gerais</option>
+                  <option>Pará</option>
+                  <option>Paraíba</option>
+                  <option>Paraná</option>
+                  <option>Pernambuco</option>
+                  <option>Piauí</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Rio Grande do Norte</option>
+                  <option>Rio Grande do Sul</option>
+                  <option>Rondônia</option>
+                  <option>Roraima</option>
+                  <option>Santa Catarina</option>
+                  <option>São Paulo</option>
+                  <option>Sergipe</option>
+                  <option>Tocantins</option>
+                  <!-- Estados Canada -->
+                  <option>Ontário</option>
+                  <option>Quebec</option>
+                  <option>Novo Brunswick</option>
+                  <option>Nova Escócia</option>
+                  <option>Manitoba</option>
+                  <option>Colúmbia Britânica</option>
+                  <option>Ilha do Príncipe Eduardo</option>
+                  <option>Saskatchewan</option>
+                  <option>Alberta</option>
+                  <option>Terra Nova e Labrador</option>
+                  <!-- Estados Eua -->
+                  <option>Alabama</option>
+                  <option>Alasca</option>
+                  <option>Arkansas</option>
+                  <option>Arizona</option>
+                  <option>Califórnia</option>
+                  <option>Kansas</option>
+                  <option>Carolina do Norte</option>
+                  <option>Carolina do Sul</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Dakota do Norte</option>
+                  <option>Dakota do Sul</option>
+                  <option>Delaware</option>
+                  <option>Flórida</option>
+                  <option>Geórgia</option>
+                  <option>Havai</option>
+                  <option>Idaho</option>
+                  <option>Rhode Island</option>
+                  <option>Illinóis</option>
+                  <option>Indiana</option>
+                  <option>Iowa</option>
+                  <option>Kentucky</option>
+                  <option>Luisiana</option>
+                  <option>Maine</option>
+                  <option>Maryland</option>
+                  <option>Massachusetts</option>
+                  <option>Michigan</option>
+                  <option>Minnesota</option>
+                  <option>Mississípi</option>
+                  <option>Missouri</option>
+                  <option>Montana</option>
+                  <option>Nebraska</option>
+                  <option>Nevada</option>
+                  <option>Nova Hampshire</option>
+                  <option>Nova Jersey</option>
+                  <option>Nova Iorque</option>
+                  <option>Novo México</option>
+                  <option>Oklahoma</option>
+                  <option>Ohio</option>
+                  <option>Oregon</option>
+                  <option>Pensilvânia</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Utah</option>
+                  <option>Vermont</option>
+                  <option>Virgínia</option>
+                  <option>Virgínia Ocidental</option>
+                  <option>Washington</option>
+                  <option>Wisconsin</option>
+                  <option>Wyoming</option>
+                  <!-- Capitais Brasil -->
+                  <option>São Luís</option>
+                  <option>Goiânia</option>
+                  <option>Vitória</option>
+                  <option>Fortaleza</option>
+                  <option>Manaus</option>
+                  <option>Macapá</option>
+                  <option>Rio Branco</option>
+                  <option>Maceió</option>
+                  <option>Salvador</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Natal</option>
+                  <option>Porto Alegre</option>
+                  <option>Porto Velho</option>
+                  <option>Boa Vista</option>
+                  <option>Florianópolis</option>
+                  <option>São Paulo</option>
+                  <option>Aracaju</option>
+                  <option>Palmas</option>
+                  <option>Recife</option>
+                  <option>Curitiba</option>
+                  <option>Teresina</option>
+                  <option>João Pessoa</option>
+                  <option>Campo Grande</option>
+                  <option>Belo Horizonte</option>
+                  <option>Belém</option>
+                </template>
+                <form class="row gy-2 gx-md-2 gx-lg-4 flex-center my-1">
+                  <div class="col-2 col-md-data">
+                    <h6 class="text-white fs-2 fs-md-3">date</h6>
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <h4 class="text-white fs-2 fs-md-3">origin</h4>
+                  </div>
+                  <div class="col-3 col-md-2">
+                    <h4 class="text-white fs-2 fs-md-3">destination</h4>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <h4 class="text-white fs-2 fs-md-3">transport</h4>
+                  </div>            
+                  <p>
+                    <div class="col-2 col-md-data">
+                      <label class="visually-hidden" for="date">Date</label>
+                      <div class="input-group">
+                        <input class="form-control" id="date" type="date" />
+                      </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                      <input class="form-select" type="text" name="searchOrigin" id="searchOrigin"  placeholder="" list="searchresults" autocomplete="off" />
+                      <datalist id="searchresults"></datalist>
+                    </div>
+                    <div class="col-3 col-md-2">
+                      <input class="form-select" type="text" name="searchDestination" id="searchDestination"  placeholder="" list="searchresults" autocomplete="off" />
+                      <datalist id="searchresults"></datalist>
+                    </div>
+                    <div class="col-4 col-md-3">
+                      <h4 class="text-white fs-2 fs-md-3">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-transport-link" id="nav-home-tab"    data-bs-toggle="tab" data-bs-target="#nav-home"     type="button" role="tab" aria-controls="nav-home"     aria-selected="false"> <i class="fas fa-light fa-car"></i></button>
+                          <button class="nav-transport-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"  type="button" role="tab" aria-controls="nav-profile"  aria-selected="false"> <i class="fa fa-plane"></i></button>
+                          <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fa fa-ship"></i></button>
+                          <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fas fa-light fa-train"></i></button>
+                        </div>
+                      </h4>
+                    </div>
+                  </p>                
+                </form>
+                <div class="d-flex flex-column flex-center">
+                  <button class="nav-transport-link" id="nav-home-tab"    data-bs-toggle="tab" data-bs-target="#nav-home"     type="button" role="tab" aria-controls="nav-home"     aria-selected="false"> <i class="fa-regular fa-map-location-dot"> Generate </i></button>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </section>
+
+      <!-- section destiny mexico -->
+        <section id="destiny_mexico" class="background-mexico">
+          <section id="planner">
+            <!-- <div class="bg-holder" style="background-image:url(assets/img//gallery/booking.png);background-position:center;background-size:cover;"></div> -->
+            <div class="container">
+              <div class="row min-vh-75">
+                <div class="col-12 text-white">
+                  <div class="d-flex flex-column flex-center">
+                    <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_mexico.png" alt="" />&nbsp MEXICO</h1>
+                  </div>
+                  <div style="border: 5px solid black;" class="row gy-2 gx-md-2 gx-lg-4 flex-center my-2 place-description">
+                    <i class="fa bi-geo-alt"></i>
+                    <i class="fa bi-geo-alt" style="font-size:60px;color:red;"></i>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa fa-thin fa-location-dot"></i>&nbsp;<strong>CIDADES</strong></h1>
+                    <h1 class="text-black fs-2">CIDADE DO MÉXICO - TEOTIHUACÁN GUANAJUATO - SAN MIGUEL DE ALLENDE - QUERÉTARO - SIERRA MADRE - EL CHEPE - BAIXA CALIFÓRNIA - PUEBLA - RESERVA DA BIOSFERA LOS TUXTLAS - VERACRUZ - COATEPEC - SAN CRISTÓBAL DE LAS CASAS - PALENQUE - CAÑON DEL SUMIDERO - TULUM - CANCÚN - RIVIERA MAYA - CHICHÉN-ITZÁ - CAMPECHE - MÉRIDA - CATEMACO - TLACOTALPAN - XALAPA</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>MERGULHO</strong></h1>
+                    <h1 class="text-black fs-2">MAR DE CORTÊS - PENÍNSULA DA BAIXA CALIFÓRNIA - COZUMEL - RIVIERA MAYA - ILHA DE GUADALUPE</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>SURF</strong></h1>
+                    <h1 class="text-black fs-2">BAJA CALIFORNIA ( ENSENADA - LOS CABOS - PLAYA LOS CERRITOS) - NAYARIT (LAS ISLITAS - STONER POINT BREAK - SAYULITA) - COLIMA (BOCA DE PASCUALES - CUYUTLÁN) - OAXACA (ZICATELA - BARRA DA CRUZ ) - GUERRERO (TRONCONES) - MELHOR ÉPOCA: DE JUNHO A AGOSTO</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>PRAIA</strong></h1>
+                    <h1 class="text-black fs-2">CANCUN - ISLAS MUJERES - ISLA COZUMEL - ACAPULCO - ISLAS MARIETAS - TULUM - CABO SAN LUCAS - AKUMAL - PUERTO VALLARTA - ZIHUATANEJO</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>RUINAS E PIRAMIDES</strong></h1>
+                    <h1 class="text-black fs-2">TEOTUHUACÁN - CHICHÉN ITZA</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>FESTAS</strong></h1>
+                    <h1 class="text-black fs-2">ZÓCALO DE OAXACA (DIA DE LOS MUERTOS) - BAIRRO POLANCO - BAIRRO CONDESA  - ROMA - PARQUE CHAPULTEPEC</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>PARQUES</strong></h1>
+                    <h1 class="text-black fs-2">PARQUE FUNDIDORA  MONTERREY - PARQUE ECOARQUEOLÓGICO XCARET - BOSQUE DE CHAPULTEPEC</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>MUSEUS</strong></h1>
+                    <h1 class="text-black fs-2">MUSEU PALÁCIO DE BELAS ARTES - MUSEU FRIDA KAHLO E ESTÚDIO DIEGO RIVERA - MUSEU NACIONAL DE ANTROPOLOGIA - MUSEU DO TEMPLO MAYOR - MUSEU DAS MÚMIAS DE GUANAJUATO</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>RESTAURANTES</strong></h1>
+                    <h1 class="text-black fs-2">ROSETTA RESTAURANTE E PANADERIA ROSETTA (CIDADE MEXICO) - CAFÉ DE TACUBA (CIDADE MEXICO) - EL VILSITO (CIDADE MEXICO) - TACOS EL GÜERO  (CIDADE MEXICO) - TICUCHI  (CIDADE MEXICO) - ARCA (TULUM) - FAUNA (VALLE DE GUADALUPE) - LA GUERRERENSE (ENSENADA) - PASILLO DE HUMO (OAXACA) </h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>PRATOS TIPICOS</strong></h1>
+                    <h1 class="text-black fs-2">  TAMALES - MOLE - CHILAQUILES - TACOS - MICHELADA -  ROSCA DEU REY - GUACAMOLE - CHILI COM CARNE - CHURROS
+                    
+                      <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>ROTAS</strong></h1>
+                    <h1 class="text-black fs-2"><strong>ROTA DA TEQUILA</strong> A REGIÃO DE GUADALAJARA, EM JALISCO, É CONHECIDA PELA PRODUÇÃO DA TEQUILA, BEBIDA TÍPICA DO MÉXICO</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>BELEZAS NATURAIS</strong></h1>
+                    <h1 class="text-black fs-2">HIERVE EL ÁGUA - ARCO DE CABO SAN LUCAS - VULCÃO INATIVO MALINTZIN</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>RELIGIOSIDADE</strong></h1>
+                    <h1 class="text-black fs-2">CATEDRAL METROPOLITANA - BASÍLICA DE GUADALUPE - CATEDRAL METROPOLITANA</h1>
+                    
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>CULTURAL</strong></h1>
+                    <h1 class="text-black fs-2">CENTRO HISTÓRICO DE GUADALAJARA</h1>
+                    <hr>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>CLIMA</strong></h1>
+                    <h1 class="text-black fs-2">CLIMA QUE É AMENO - CHUVAS (JUNHO A NOVEMBRO) - PROBABILIDADE DE FURACÕES (SETEMBRO A NOVEMBRO)</h1>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>MOEDA</strong></h1>
+                    <h1 class="text-black fs-2">PESOS MEXICANOS - DÓLAR AMERICANO</h1>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>VACINAS</strong></h1>
+                    <h1 class="text-black fs-2">A VACINA PARA A FEBRE AMARELA NÃO É OBRIGATÓRIA PARA A IDA AO MÉXICO. NO ENTANTO, SE O SEU VOO NÃO FOR DIRETO, ELE PODE TER ESCALA EM PAÍSES QUE EXIGEM ESSE CERTIFICADO, TAIS COMO PANAMÁ OU COLÔMBIA.</h1>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>DOCUMENTACAO</strong></h1>
+                    <h1 class="text-black fs-2">PASSAPORTE COM O MÍNIMO DE 6 MESES DE VALIDADE - BRASILEIROS NÃO PRECISAM DE VISTO</h1>
+                    <h1 class="text-black fs-2 fs-md-3"><i class="fa-thin fa-location-dot"></i><strong>FUSO HORÁRIO</strong></h1>
+                    <h1 class="text-black fs-2">3 FUSO HORÁRIOS DIFERENTES</h1>
+                    <!-- <div class="col-4 col-md-2">
+                      <i style="font-size: 30px;" class="fa fa-map"></i><h1 class="text-black fs-2 fs-md-3"><strong>PONTOS TURISTICOS</strong></h1>
+                    </div> -->
+                    <!-- <div class="col-4 col-md-3">
+                        <h4 class="text-white fs-2 fs-md-3">
+                          <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-transport-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"  type="button" role="tab" aria-controls="nav-profile"  aria-selected="false"> <i class="fa fa-plane"></i></button>
+                            <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fa fa-ship"></i></button>
+                            <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fas fa-light fa-train"></i></button>
+                          </div>
+                        </h4>
+                      </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          <img class="destiny-img" src="" alt="" />
+        </section>
+      <!-- section rodape -->
+        <section class="py-6">
+          <div class="container">
+            <div class="row flex-center">
+              <div class="col-auto mb-4">
+                <ul class="list-unstyled list-inline mb-0">
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Home</a></li>
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Planner</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row flex-center">
+              <div class="col-auto mb-4">
+                <p class="mb-0 fs--1 text-dark">&copy; This template is made with&nbsp;
+                  <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3984F3" viewBox="0 0 16 16">
+                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                  </svg>&nbsp;by&nbsp;<a class="text-700" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
+                </p>
+              </div>
+            </div>
+            <div class="row flex-center">
+              <div class="col-auto">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item me-3"><a class="text-decoration-none" href="#!">
+                      <svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a class="text-decoration-none" href="#!">
+                      <svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3984F3" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a href="#!">
+                      <svg class="bi bi-twitter" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3984F3" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a href="#!">
+                      <svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3984F3" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"> </path>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    <!-- google apis -->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- JavaScripts -->
+      <script src="vendors/@popperjs/popper.min.js"></script>
+      <script src="vendors/bootstrap/bootstrap.min.js"></script>
+      <script src="vendors/is/is.min.js"></script>
+      <script src="vendors/plyr/plyr.polyfilled.min.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+      <script src="assets/js/theme.js"></script>
+      <script src="vendors/bootstrap/bootstrap.min.js"></script>
+      <script src="vendors/fontawesome/all.min.js"></script>
+      <script>
+        // Origin
+          var searchOrigin = document.querySelector('#searchOrigin');
+          var results = document.querySelector('#searchresults');
+          var templateContent = document.querySelector('#resultstemplate').content;
+          searchOrigin.addEventListener('keyup', function handler(event) {
+              while (results.children.length) results.removeChild(results.firstChild);
+              var inputVal = new RegExp(searchOrigin.value.trim(), 'i');
+              var set = Array.prototype.reduce.call(templateContent.cloneNode(true).children, function searchFilter(frag, item, i) {
+                  if (inputVal.test(item.textContent) && frag.children.length < 6) frag.appendChild(item);
+                  return frag;
+              }, document.createDocumentFragment());
+              results.appendChild(set);
+          });
+        // Destination
+          var searchDestination = document.querySelector('#searchDestination');
+          var results = document.querySelector('#searchresults');
+          var templateContent = document.querySelector('#resultstemplate').content;
+          searchDestination.addEventListener('keyup', function handler(event) {
+              while (results.children.length) results.removeChild(results.firstChild);
+              var inputVal = new RegExp(searchDestination.value.trim(), 'i');
+              var set = Array.prototype.reduce.call(templateContent.cloneNode(true).children, function searchFilter(frag, item, i) {
+                  if (inputVal.test(item.textContent) && frag.children.length < 6) frag.appendChild(item);
+                  return frag;
+              }, document.createDocumentFragment());
+              results.appendChild(set);
+          });
+      </script>
+
+  </body>
+
+</html>

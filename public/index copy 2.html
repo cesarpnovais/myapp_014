@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3P PLANNER</title>
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      <!-- TITULO -->
+      <nav class="navbar navbar-expand-lg fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"> <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="50" /><span class="text-primary fs-4 ps-2">3P PLANNER</span></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <h4 class="text-white fs-2 fs-md-3">
+                  <div class="nav" id="nav-tab" role="tablist">
+                    <a class="nav-link" aria-current="page" href="#home">HOME</i></a>
+                    <a class="nav-link" aria-current="page" href="#planner">PLANNER</i></a>
+                    <a class="nav-link" aria-current="page" href="#destiny_mexico">DESTINY</i></a>                    
+                  </div>
+                </h4>
+            </div>
+            <form class="ps-lg-5">
+              <button class="btn btn-lg btn-outline-primary order-0" type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- section home -->
+      <section id="home" class="py-0">
+        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;background-size:contain;"></div>
+        <div class="container position-relative">
+          <div class="row align-items-center min-vh-75 my-lg-8">
+            <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
+              <h1 class="mb-4 display-1 lh-sm">Trip Planner</h1>
+              <p class="mt-4 mb-5 fs-1 lh-base">Plan your perfect trip and find the most important information about your chosen destinations.</p><a class="btn btn-lg btn-primary hover-top" href="#" role="button">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section home -->
+      <section id="planner" class="py-0" style="height: 600px; width: 100%;">
+        <div class="bg-holder" style="background-image:url(assets/img//gallery/booking.png);background-position:center;background-size:cover;">
+        </div>
+      </section>
+      <!-- <button onclick="toggleSessionShow('s_destiny_mexico')">show</button>
+      <button onclick="toggleSessionHide('s_destiny_mexico')">hide</button> -->
+      <!-- section destiny mexico -->
+      <!-- <section id="s_destiny_mexico" class="py-0 background-mexico" style="margin-top:115px; height: 600px; width: 100%;" hidden> -->
+      <section id="s_destiny_mexico" class="py-0 background-destino background-destino-mexico" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_mexico.png" alt="" />&nbsp; MEXICO</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CIDADE DO MÉXICO - COZUMEL - MELTEOTIHUACÁN - CANCÚN - RIVIERA MAYA - MÉRIDA - BAJA CALIFÓRNIA - PUEBLA - VERACRUZ - SIERRA MADRE - SAN CRISTÓBAL DE LAS CASAS - PALENQUE - SAN MIGUEL ALLENDE
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CANCÚN, RIVIERA MAYA, LOS CABOS, TULUM, ISLA MUJERES, TECOLUTLA, MIRAMAR BEACH, COZUMEL, IXTAPA PACIFIC, ACAPULCO, AKUMAL
+          </h6>
+          
+          <!-- <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_piramide.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RUINAS E PIRAMIDES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TEOTUHUACÁN - CHICHÉN ITZA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PARQUES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PARQUE FUNDIDORA  MONTERREY - PARQUE ECOARQUEOLÓGICO XCARET - BOSQUE DE CHAPULTEPEC
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_museu.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MUSEUS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MUSEU PALÁCIO DE BELAS ARTES - MUSEU FRIDA KAHLO E ESTÚDIO DIEGO RIVERA - MUSEU NACIONAL DE ANTROPOLOGIA - MUSEU DO TEMPLO MAYOR - MUSEU DAS MÚMIAS DE GUANAJUATO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_igreja.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RELIGIOSIDADE</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CATEDRAL METROPOLITANA - BASÍLICA DE GUADALUPE - CATEDRAL METROPOLITANA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_rotas.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>ROTAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;<strong>ROTA DA TEQUILA</strong> A REGIÃO DE GUADALAJARA, EM JALISCO, É CONHECIDA PELA PRODUÇÃO DA TEQUILA, BEBIDA TÍPICA DO MÉXICO</h1>
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_festa_mexico.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>FESTAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ZÓCALO DE OAXACA (DIA DE LOS MUERTOS) - BAIRRO POLANCO - BAIRRO CONDESA  - ROMA - PARQUE CHAPULTEPEC
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_restaurante.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RESTAURANTES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ROSETTA, CAFÉ TACUBA, EL VILSITO, TACOS EL GÜERO, TICUCHI  (CIDADE MEXICO) - ARCA (TULUM) - FAUNA (VALLE GUADALUPE) - LA GUERRERENSE (ENSENADA) - PASILLO DE HUMO (OAXACA)
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_pratos_tipicos.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRATOS TIPICOS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TAMALES - MOLE - CHILAQUILES - TACOS - MICHELADA -  ROSCA DEU REY - GUACAMOLE - CHILI COM CARNE - CHURROS
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_natureza.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>BELEZAS NATURAIS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HIERVE EL ÁGUA - ARCO DE CABO SAN LUCAS - VULCÃO INATIVO MALINTZIN
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_surf.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>SURF</u></strong> (JUNHO A AGOSTO)
+            &nbsp;&nbsp;&nbsp;&nbsp;BAJA CALIFORNIA (ENSENADA - CABOS) - NAYARIT (ISLITAS - STONER POINT - SAYULITA) - COLIMA (BOCA PASCUALES - CUYUTLÁN) - OAXACA (ZICATELA - BARRA CRUZ) - GUERRERO (TRONCONES)
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_mergulho.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MERGULHO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MAR DE CORTÊS - PENÍNSULA DA BAIXA CALIFÓRNIA - COZUMEL - RIVIERA MAYA - ILHA DE GUADALUPE
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cultural.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CULTURAL</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CENTRO HISTÓRICO DE GUADALAJARA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_clima.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CLIMA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;AMENO NA MAIORIA DO ANO - CHUVAS (JUNHO A NOVEMBRO) - PROBABILIDADE DE FURACÕES (SETEMBRO A NOVEMBRO)
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_identidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>DOCUMENTACAO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PASSAPORTE COM O MÍNIMO DE 6 MESES DE VALIDADE - BRASILEIROS NÃO PRECISAM DE VISTO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_vacinas.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>VACINAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; NENHUMA VACINA OBRIGATÓRIA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_dinheiro.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MOEDA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PESOS MEXICANOS - DÓLAR AMERICANO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_fusos_horarios.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>FUSO HORÁRIO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;4 FUSO HORÁRIOS DIFERENTES - SENDO GMT DA CIDADE DO MÉXICO É DE -5
+          </h6> -->
+        </div>
+      </section>
+      <!-- section destiny argentina -->
+      <section id="s_destiny_argentina" class="py-0 background-destino background-destino-argentina" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_argentina.png" alt="" />&nbsp; ARGENTINA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;BUENOS AIRES, TIGRE, CÓRDOBA, SALTA, USHUAIA, BARILOCHE, MENDOZA, EL CALAFATE, MAR DEL PLATA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MAR DEL PLATA, VILLA GESELL, PEHUÉN CO, EL DORADILLO, QUILA QUINA, NECOCHEA, QUEQUÉN, PUERTO MADRYN, EL DORADILLO, LAS GRUTAS, BAHÍA CREEK, MARISOL, DEL TORO
+          </h6>
+          <!-- <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PARQUES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PARQUE NACIONAL LOS GLACIARES, ACONCAGUA, GLACIAR UPSALA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_yatch.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>BARCO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;EL CALAFATE, CATARATAS
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_montanhas_neve.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MONTANHAS MEVE</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MONTANHA ANDES, GLACIAR PERITO MORENO, GELEIRA VINCIGUERRA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PRAIA MAR DEL PLATA, PLAYA VARESE, EL DORADILLO, PUNTA MOGOTES
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_esqui.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>ESQUI NEVE</u></strong> (JUNHO A SETEMBRO)
+            &nbsp;&nbsp;&nbsp;&nbsp;CHAPELCO, LAS LEÑAS, LA HOYA, CERRO CASTOR, CERRO CATEDRAL, CERRO BAYO, BARILOCHE
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cultural.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CULTURAL</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; CEMITERIO RECOLETA, PALACIO BAROLO, MUSEU RIVER PLATE MUSEU BOCA JUNIORS, SENHOR TANGO, TEATRO ASTOR PIAZOLLA
+          </h6>
+        </div> -->
+      </section>
+      <!-- section destiny portugal -->
+      <section id="s_destiny_portugal" class="py-0 background-destino background-destino-portugal" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_portugal.png" alt="" />&nbsp; PORTUGAL</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;LISBOA, PORTO, COIMBRA, ALGARVE, LAGOS, FATIMA, FARO, BELMONTE, SINTRA, MARVÃO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;GUINCHO, MARINHA, BENAGIL, NAZARÉ, ALBUFEIRA, ERICEIRA, PENICHE, MADEIRA, MOLEDO
+          </h6>
+          <!-- <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PARQUES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;JARDIM BOTANICO, MONSERRATE, ARRABIDA, SERRAS DE AIRE, SERRA DE SÃO MAMEDE, DOURO, BARQUINHA, PAZ, EDUARDO VII
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;GALAPINHOS, GALÉ, MONTE GORDO, NAZARE, DONA ANA, BENAGIL, COSTA NOVA, PENICHE, SETUBAL, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_surf.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>SURF</u></strong> (JUNHO A SETEMBRO)
+            &nbsp;&nbsp;&nbsp;&nbsp;NAZARE, CARCAVELOS, FIGUEIRA DA FOZ, PENICHE, PEDRA BRANCA, REEF, AMADO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_castelo.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CASTELO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; PENA, TORRE BELEM, ALMOUROL, MOUROS, SINTRA, OBIDOS, SILVES, SEIXAS, SÃO JORGE, SANTA MARIA, TOMAR, GUIMARÃES
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_mosteiro.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MOSTEIROS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; MOSTEIRO JERONIMOS, PALACIO PENA, TORRE BELEM, CASTELO ALMOUROL, CASTELO MOUROS, MOSTEIRO SANTA CRUZ, MOSTEIRO BATALHA, MUSEL AZULEJO, CONVENTO CARMO, IGREJA CLERIGOS, PALACIO SINTRA, LIVRARIA LELLO, HARD ROCK CAFE LISBOA,  GRUTA BENAGIL, VINHO TAYLORS, OCEANARIO LISBOA, PORTIMAO, VALE DOURO VINHO ALMOCO, FUNCHAL VER GOLFINHOS, DOURO WINE EXPERIENCE, ALMOCO QUINTA MORGADO, ADEGA CALEM , COCKBURNS PORTO LODGE VINHO,  GRAHAMS PORT LODG VINHO , ILHA BERLENGAS, 
+          </h6> -->
+        </div>
+      </section>
+      <!-- section destiny franca -->
+      <section id="s_destiny_franca" class="py-0 background-destino background-destino-franca" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_franca.png" alt="" />&nbsp; FRANÇA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PARIS, LYON, MARSELHA, TOULOUSE, NICE, VERSALHES, BORDEAUX, AVIGNON, ORLEANS, CHAMBORD, BLOIS, TOURS
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;BIARRITZ, NICE, CANNES, OMAHA BEACH, SANTA GIULIA, PALOMBAGGIA, PAMPELONNE
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny suecia -->
+      <section id="s_destiny_franca" class="py-0 background-destino background-destino-suecia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_suecia.png" alt="" />&nbsp; SUECIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ESTOCOLMO, MALMÖ, UPPSALA, SIGTUNA, VISBY, ÖSTERMALM, SODERMALM, GAMLA STADEN, SLUSSEN, GAMLA STAN, RIDDARHOLMEN, NORRMALM
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TYLÖSAND, STRANDVAGEN, SANDHAMMARENS, SALTHOLMEN 
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny egito -->
+      <section id="s_destiny_egito" class="py-0 background-destino background-destino-egito" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_egito.png" alt="" />&nbsp; EGITO</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CAIRO, ALEXANDRIA, GIZÉ, LUXOR, SHARM EL-SHEIJ, EL ALAMEIN, TEBAS, ABU SIMBEL, ASWAN, SIWA , SINAI, DAHAB
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MAHMYA ISLAND, SOMA BAY, AGIBA BEACH, SAHL HASHEESH BEACH, EL GOUNA, RAS UM SID, NUWEIBA, FJORD BAY
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny groenlandia -->
+      <section id="s_destiny_groenlandia" class="py-0 background-destino background-destino-groenlandia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_groenlandia.png" alt="" />&nbsp; GROENLANDIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;NUUK, ILULISSAT, SISIMIUT, QAQORTOQ, KANGERLUSSUAQ, TASIILAQ, ITTOQQORTOORMIIT, PAAMIUT, NARSAK, UPERNAVIK
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SIORARSUIT
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny marrocos -->
+      <section id="s_destiny_marrocos" class="py-0 background-destino background-destino-marrocos" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_marrocos.png" alt="" />&nbsp; MARROCOS</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MARRAKECH, CASABLANCA, AGADIR, RABAT, TANGER, MEKNES, FEZ, CHEFCHAOUEN, SKOURA, TINGHIR, ESSAOUIRA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;LEGZIRA, AIN DIAB, PLGE D'AGADIR, ESSAOUIRA BECH, TAGHAZOUT 
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny holanda -->
+      <section id="s_destiny_holanda" class="py-0 background-destino background-destino-holanda" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_holanda.png" alt="" />&nbsp; HOLANDA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;AMSTERDAM, GIETHOORN, UTRECHT, GOUDA, ROTTERDAM, HAARLEM, MAASTRICHT, LEIDEN, DELF, HAIA, LISSE, ZAANSE CHANS, VOLEDAM, MARKEN
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ZANDVOORT, BLOEMENDAAL AAN ZEE, BERGEN AAN ZEE, SCHEVENINGEN, EGMOND AAN ZEE, TEXEL, VLIELAND, AMELAND, SCHIERMONNIKOOG
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny espanha -->
+      <section id="s_destiny_espanha" class="py-0 background-destino background-destino-espanha" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_espanha.png" alt="" />&nbsp; ESPANHA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;BARCELONA, MADRID, SEVILHA, GRANADA, MÁLAGA, SANTIAGO DE COMPOSTELA, CORUNHA, BILBAO, VALÊNCIA, TOLEDO, ZARAGOZA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CALA SALADA, ES TRENC, LAS CANTERAS, EL MÉDANO, COFETE, PRAIA BLANCA, CABOPINO
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny chile -->
+      <section id="s_destiny_chile" class="py-0 background-destino background-destino-chile" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_chile.png" alt="" />&nbsp; CHILE</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PUCÓN, SAN PEDRO DE ATACAMA, ILHA DE PÁSCOA, LA SERENA, PUNTA ARENAS, PUERTO NATALES, TORRES DEL PAINE, CARRETERA AUSTRAL, VALPARAISO, VIÑA DEL MAR
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CAVANCHA, LA SERENA, LA VIRGEN, BAHÍA INGLESA, CALDERA, RAPA NUI, ESTAQUILLA, HUAR HUAR, LLICO
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny jamaica -->
+      <section id="s_destiny_jamaica" class="py-0 background-destino background-destino-jamaica" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_jamaica.png" alt="" />&nbsp; JAMAICA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MONTEGO BAY, NEGRIL, OCHO RIOS, PORT ANTONIO, KINGSTON, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SEVEN MILE, BLOODY BAY, HALF MOON, FORT CLARENCE, WINNIFRED BEACH
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny australia -->
+      <section id="s_destiny_australia" class="py-0 background-destino background-destino-australia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_australia.png" alt="" />&nbsp; AUSTRALIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MELBOURNE, SYDNEY, CAMBERRA, BRISBANE, ADELAIDE, PERTH, GOLD COAST, HAMILTON ISLAND, ALBANY, DENMARK
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MANLY, BONDI, WHITEHEAVEN, SURFERS PARADISE, PALM COVE
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny japao -->
+      <section id="s_destiny_japao" class="py-0 background-destino background-destino-japao" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_japao.png" alt="" />&nbsp; JAPÃO</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;NIKKO, FUKUSHIMA, TOCHIGI, NAOSHIMA, SAPPORO, KYOTO, HIROSHIMA, TOKYO, NARA, HOKKAIDO, OSAKA , IBARAKI
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;YONAHA MAEHAMA, KONDOI, ARAGUSUKU, SUNAYAMA, YONEHARA, SHIRARAHAMA, ODAIBA KAIHIN KOEN, SHINBASHI, NISHIHAMA 
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny escocia -->
+      <section id="s_destiny_escocia" class="py-0 background-destino background-destino-escocia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_escocia.png" alt="" />&nbsp; ESCOCIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;EDIMBURGO, GLASGOW, INVERNESS, DUNDEE, SAINT ANDREWS, PERTH, ABERDEEN, FORT WILLIAM, STIRLING
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;LUSKENTYRE, PORTOBELLO, CLAIGAN CORAL, CALGARY, ACHMELVICH
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny irlanda -->
+      <section id="s_destiny_irlanda" class="py-0 background-destino background-destino-irlanda" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_irlanda.png" alt="" />&nbsp; IRLANDA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;DUBLIN, SLIGO, DONEGAL, CORK, BRAY, LIMERICK, HOWTH, MALAHIDE, DERRY, BELFAST, GALWAY, SLIEVE LEAGUE, MALIN BEG
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;DOG’S BAY, TRÁ MÓR, KEEM BAY, STREEDAGH STRAND, INCH STRAND, BANNA STRAND, TRAWMORE BAY, BALLYQUIN 
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny alemanha -->
+      <section id="s_destiny_alemanha" class="py-0 background-destino background-destino-alemanha" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_alemanha.png" alt="" />&nbsp; ALEMANHA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;BUXTEHUDE, AACHEN, COLÔNIA, HAMBURGO, BERLIM, NUREMBERG, MUNIQUE, HEIDELBERG, CALW, QUEDLINBURG, TÜBINGEN, REGENSBURG 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TRAVEMUNDE, ELLENBOGEN, STRANDBAD WANNSEE, SANKT PETER ORDING, STRAND WARNEMUND
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny polonia -->
+      <section id="s_destiny_polonia" class="py-0 background-destino background-destino-polonia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_polonia.png" alt="" />&nbsp; POLONIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;WROCLAW, SOPOT, TORUN, GDANSK, VARSÓVIA, CRACÓVIA, ZAKOPANE, POZNAN, BIRKENAU, ILHA DE HEL, BYDGOSZCZ, RYBNIK
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HEL, JELITKOWO, JURATA, PLAŻA BABIE DOŁY GDYNIA, STOGI, BRZEZNO, SOBIESZEWO, SOPOT, SWINOUJSCIE
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny guatemala -->
+      <section id="s_destiny_guatemala" class="py-0 background-destino background-destino-guatemala" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_guatemala.png" alt="" />&nbsp; GUATEMALA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ANTÍGUA, SAN PEDRO, LANQUIN, TIKAL, LIVINGSTON, CRATERA AZUL, HOBBITENANGO, CIDADE DA GUATEMALA, SOLOLÁ, ESCUINTLA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PLAYA BRANCA, PUNTA DE PALMA, PLAYA SND BAY, RUBEL HA, TECOJATE
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny madagascar -->
+      <section id="s_destiny_madagascar" class="py-0 background-destino background-destino-madagascar" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_madagascar.png" alt="" />&nbsp; MADAGASCAR</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ANTANANARIVO, TOAMASINA, ANTSIRANANA, ANALALAVA, MORONDAVA, ANAOVANDRANO, PUERTO DE SAN LUIS, MOUMBE, ANDAVADOAKA 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ANDILANA, AMBATOLOAKA, CHANTY, AMPASINDAVA, COCO, NOSY IRANJA, NOSY KOMBA, NOSY TANIKELY, NOSY SAKATIA, BAÍA DE SAKALAVA
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny panama -->
+      <section id="s_destiny_panama" class="py-0 background-destino background-destino-panama" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_panama.png" alt="" />&nbsp; PANAMÁ</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CIDADE DO PANAMÁ, BOCAS DEL TORO, COLÓN, BOQUETE, RIVIERA PACIFICA, PEDASI, CAMBUTAL, VENAO, PORTOBELO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ESTRELLA, SANTA CLARA, PUNTA CHAME, TABOGA, RED FROG, ISLA PERRO, SANTA CLARA
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny bahamas -->
+      <section id="s_destiny_bahamas" class="py-0 background-destino background-destino-bahamas" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_bahamas.png" alt="" />&nbsp; BAHAMAS</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;NASSAU, GEORGE TOWN, ROLLEVILLE, GRAND CAY CITY, NEW PLYMOUTH, DUNMORE TOWN, NOVA PROVIDÊNCIA, CENTRAL ABACO, EXUMA, BIMINI
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CABLE, JUNKANOO, PINK SANDS, CABBAGE, HALF MOOM
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny filipinas -->
+      <section id="s_destiny_filipinas" class="py-0 background-destino background-destino-filipinas" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_filipinas.png" alt="" />&nbsp; FILIPINAS</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MANILA, CEBU, QUEZON CITY, CORON, ALFONSO, KABAYAN, BAGUIO, TUBA, BOTOLAN, BANAUE, PUERTO PRINCESA, PAMPANGA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PUKA, ILHA PAMALICAN, BRANCA, SIARGAO, MATINLOC, NAGSASA, KALANGGAMAN, TUBBATAHA
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny armenia -->
+      <section id="s_destiny_armenia" class="py-0 background-destino background-destino-armenia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_armenia.png" alt="" />&nbsp; ARMÊNIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;YEREVAN, DILIJAN, ANI, GUIUMRI, TSAGHKADZOR, SEVÃ, IJEVAN, SISIANO, JERMUK, GORIS
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HAYRAVANK
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny israel -->
+      <section id="s_destiny_israel" class="py-0 background-destino background-destino-israel" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_israel.png" alt="" />&nbsp; ISRAEL</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;JERUSALÉM, TEL AVIV, NAZARÉ, BELÉM, JERICÓ, EILAT, SAFED, ACRE, CESAREIA, MASSADA, PETRA, HAIFA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; ELIAT, JAVA, BANANA, DOLPHIN REEF, HOF PALMAHIN, PRINCESS, EIN BOKEK
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny turquia -->
+      <section id="s_destiny_turquia" class="py-0 background-destino background-destino-turquia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_turquia.png" alt="" />&nbsp; TURQUIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ISTAMBUL, CAPADÓCIA, ÉFESO, PAMUKKALE, BODRUM, ESMIRNA, ANTÁLIA, DALAMAN, IZMIR, KONYA, PÉRGAMO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PATARA, KAPUTAŞ, VALE DA BORBOLETA, KABAK, BLUE LAGOON, CLEOPATRA'S, CIRALI
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny coreia-sul -->
+      <section id="s_destiny_coreia-sul" class="py-0 background-destino background-destino-coreia-sul" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_coreia-sul.png" alt="" />&nbsp; COREIA DO SUL</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SEUL, DMZ, INCHEON, CHUNCHEON, PYEONGCHANG, SOKCHO, JEONJU, BUSAN, GYEONGJU, ILHA DE JEJU
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HAEUNDAE, GWANGALLI, HYEOPJAE, YONGMEORI, GYEONGPO, SONGJEONG 
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny indonesia -->
+      <section id="s_destiny_indonesia" class="py-0 background-destino background-destino-indonesia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_indonesia.png" alt="" />&nbsp; INDONESIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SURABAIA, BANDUNG, BEKASI, MEDAN, JACARTA, DENPASAR, MALANG, PADANG, PALOPO, BENGKULU, GIANYAR, BANGLI, BULELENG, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MAWI, SENGGIGI, KERANDANGAN, ILHAS GILI, JIMBARAN, AMED, NUSA PENIDA, PADANG PADANG, PINK, SEMETI, BINGIN
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny bahrein -->
+      <section id="s_destiny_bahrein" class="py-0 background-destino background-destino-bahrein" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_bahrein.png" alt="" />&nbsp; BAHREIN</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MANAMA, RIFFA, MUHARRAQ, A'ALI, ZALLAQ, HIDD, JUFFAIR, ISA TOWN, SITRA, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MARASSI, MANAMA, ZALLAQ, BUDAIA, JUZUR HAWAR, HAWAR
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny cingapura -->
+      <section id="s_destiny_cingapura" class="py-0 background-destino background-destino-cingapura" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_cingapura.png" alt="" />&nbsp; CINGAPURA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SINGAPURA, MARINA BAY, CHINATOWN, ORCHARD, ILHA DE SENTOSA, LITTLE INDIA, KAMPONG GLAM, CHANGI, PULAU UBIN
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;EAST COST, PALAWAN, SILOSO, TANJONG, LAZARUS
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny vietna -->
+      <section id="s_destiny_vietna" class="py-0 background-destino background-destino-vietna" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_vietna.png" alt="" />&nbsp; VIETNA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SAPA, NINH BINH, HOI AN, HA GIANG, BAC HA, HUE, DA LAT, MUI NE, CAN THO, HANOI, HUE, DONG HOI,
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;AN BANG, MY KHE, NHA TRANG, NON NUOC, BAI TAN SAO
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny maldivas -->
+      <section id="s_destiny_maldivas" class="py-0 background-destino background-destino-maldivas" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_maldivas.png" alt="" />&nbsp; MALDIVAS</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MALÉ, ADDU CITY, MAAFUSHI, GILI LANKANFUSHI, FIHALHOHI, THULUSDHOO, VILLIMALE, THULUSDHOO, HULHUMALE, GUILHI, LHAVIYANI ATOL, HURAA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;GILI LANKANFUSHI,  ILHA FIHALHOHI, MAAFUSHI, BIKINI, MALE, COCOA ISLAND, VELASSARU, HALAVELI, KUNFUNADHOO
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny tailandia -->
+      <section id="s_destiny_tailandia" class="py-0 background-destino background-destino-tailandia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_tailandia.png" alt="" />&nbsp; TAILANDIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PHETCHABUN, BANGKOK, HAT YAI, KOOD,. CHIANG MAI, SUKHOTHAI, ILHAS SIMILAN, KRABI, PHUKET
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny estonia -->
+      <section id="s_destiny_estonia" class="py-0 background-destino background-destino-estonia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_estonia.png" alt="" />&nbsp; ESTONIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;KURESSAARE, PARNU, TALLINN, HAAPSALU, NARVA, VALGA, TALIN, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny finlandia -->
+      <section id="s_destiny_finlandia" class="py-0 background-destino background-destino-finlandia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_finlandia.png" alt="" />&nbsp; FINLANDIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HELSINQUE, ROVANIEMI, TURKU, IVALO, LEVI, TAMPERE, OULU, LAHTI, ESPOO, LAPPEENRANTA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny noruega -->
+      <section id="s_destiny_noruega" class="py-0 background-destino background-destino-noruega" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_noruega.png" alt="" />&nbsp; NORUEGA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;OSLO, BERGEN, STAVANGER, ILHAS LOFOTEN, GEIRANGER, KRISTIANSAND, TØNSBERG, HORTEN, LARVIK, FLAM
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny grecia -->
+      <section id="s_destiny_grecia" class="py-0 background-destino background-destino-grecia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_grecia.png" alt="" />&nbsp; GRECIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ATENAS, OLIMPIA, DELFOS, NAXOS, MYKONOS, SANTORINI, MILOS, CABO DE SOUNIO, ZAQUINTOS, TEBAS, TESSALÔNICA, CEFALÔNIA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;NAVAGIO, BALOS, PRAIA MYRTOS
+          </h6>
+<!-- Praias
+
+Lugares históricos
+Acrópole de Atenas, Micenas, Museu arqueológico de Atenas
+Atrações ao ar livre
+Caverna de Melissanthi, Mount Olympus, Metéora
+Museus
+Museu da Acrópole, Museu Benaki, Museu Arqueológico de Heraclião
+Mercados
+Mercado central, Agora Modiano, Kapani Market -->
+        </div>
+      </section>
+      <!-- section destiny islandia -->
+      <section id="s_destiny_islandia" class="py-0 background-destino background-destino-islandia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_islandia.png" alt="" />&nbsp; ISLANDIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;REYKJAVIK, GEYSIR, GULLFOSS, PARQUE NACIONAL THINGVELLIR, LAGOA AZUL, JÖKULSÁRLÓN, SKAFTAFELL, MYVATN, AKUREYRI E HUSAVIK
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+<!-- Atrações ao ar livre
+Gullfoss, Seljalandsfoss, Skógafoss
+Praias
+Reynisfjara Beach, Diamond Beach, Djúpalónssandur
+Museus
+Museu Falológico Islândes, Perlan, Museu Nacional da Islândia
+Lugares históricos
+Sun Voyager, Lava field Dimmuborgir, The Settlement Exhibition -->
+        </div>
+      </section>
+      <!-- section destiny romenia -->
+      <section id="s_destiny_romenia" class="py-0 background-destino background-destino-romenia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_romenia.png" alt="" />&nbsp; ROMÊNIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny bulgaria -->
+      <section id="s_destiny_bulgaria" class="py-0 background-destino background-destino-bulgaria" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_bulgaria.png" alt="" />&nbsp; BULGARIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SOFIA, PLOVDIV, NESSEBAR, VARNA, VELIKO TARNOVO, SOFIA, PERPERIKON, NIS
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+<!-- Praias
+Sunny Beach, плаж Иракли, Atliman Beach
+Atrações ao ar livre
+7 Lagos de Rila, National Palace of Culture (NDK), Pirin National Park
+Lugares históricos
+Catedral de Alexandre Nevsky, Паметник на Бузлуджа, Igreja de Boiana
+Museus
+National Museum of History, Regional History Museum of Sofia, National -->
+        </div>
+      </section>
+      <!-- section destiny malta -->
+      <section id="s_destiny_malta" class="py-0 background-destino background-destino-malta" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_malta.png" alt="" />&nbsp; MALTA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;VALLETA, ST. JULIAN'S, MELLIEHA, MDINA, MARSAXLOKK, BIRZEBBUGA, GOZO, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+<!-- Praias
+Ramla Beach, Golden Bay, Għadira Bay
+Atrações ao ar livre
+Comino, Upper Barrakka, Hipogeu de Hal Saflieni
+Lugares históricos
+Ġgantija, Hagar Qim, Grandmaster Palace Courtyard
+Museus
+Forte de Santo Elmo, Casa Rocca Piccola, St Paul’s Catacombs
+Cassinos
+Dragonara Casino, Casino Malta, Portomaso Casino -->
+        </div>
+      </section>
+      <!-- section destiny eslovenia -->
+      <section id="s_destiny_eslovenia" class="py-0 background-destino background-destino-eslovenia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_eslovenia.png" alt="" />&nbsp; ESLOVÊMIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;SKOFJA LOKA, KOPER, MOJSTRANA, BLED, KOBARID, LIUBLIANA, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+
+          <!-- https://www.passagenspromo.com.br/blog/liubliana-encantos-e-curiosidades-de-uma-cidade-eslovena/ -->
+        </div>
+      </section>
+      <!-- section destiny eslovaquia -->
+      <section id="s_destiny_eslovaquia" class="py-0 background-destino background-destino-eslovaquia" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_eslovaquia.png" alt="" />&nbsp; ESLOVAQUIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;BRATISLAVA, BARDEJOV, ZILINA, BANSKÁ ŠTIAVNICA, BOJNICE, KOŠICE, POPRAD, MARTIN, PRESOV, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+      <!-- section destiny ucrania -->
+      <section id="s_destiny_ucrania" class="py-0 background-destino background-destino-ucrania" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_ucrania.png" alt="" />&nbsp; UCRÂNIA</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;KIEV, ODESSA, LVIV, CHERNOBYL, CHERNIVTSI, ODESA, CÁRPATOS, KAMIANETS-PODILSKYI, 
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+
+<!-- Localização: a Ucrânia está na Europa Oriental e é o segundo maior país do continente, ficando atrás da Rússia.
+Capital: Kiev
+Fuso horário: GMT +3
+Idioma falado: Ucraniano e não são todos os locais que falam inglês, então a dica é usar a internet para traduzir as coisas.
+Moeda local: Grívnia/Hryvnia (UAH), e atualmente 1 UAH: R$ 0,20 (não use o Euro)
+Vistos: Brasileiros não precisam de visto para visitar a Ucrânia, apenas passaporte válido. Veja aqui como tirar o passaporte). Mas lembre-se: para viajar para a Europa, é preciso seguro viagem (veja aqui como escolher um bom seguro viagem)
+Vacinas: não é preciso apresentar carteira de vacinação para entrar na Ucrânia.
+Tomadas e voltagens: voltagem de 220V e tomada tipo C e F.
+Quantos dias ficar: recomendo de 10 a 15 dias na Ucrânia, para mais. -->
+        </div>
+      </section>
+      <!-- section destiny fiji -->
+      <section id="s_destiny_fiji" class="py-0 background-destino background-destino-fiji" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_fiji.png" alt="" />&nbsp; FIJI</h1>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;NADI, SUVA, YASAWA ISLAND, DENARAU, RAKI RAKI, YANUCA/CUVU, MANTARAY ISLAND, MAMANUCAS, VITI LEVU, BLIGH WATER, LAUTOKA
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </h6>
+        </div>
+      </section>
+
+
+    </main>
+    <!-- JavaScripts -->
+    <script>
+      function toggleSessionShow(el) {
+        document.getElementById(el).removeAttribute("hidden"); //to show
+        document.getElementById(el).style.display='block'; //to show
+      }
+      function toggleSessionHide(el) {
+        document.getElementById(el).style.display='none'; //to hide
+      }
+    </script>
+
+  </body>
+
+</html>

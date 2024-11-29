@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3P PLANNER</title>
+    
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link href="vendors/plyr/plyr.css" rel="stylesheet"> -->
+    
+    <!-- <link rel="manifest" href="assets/img/favicons/manifest.json"> -->
+    
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">  -->
+    
+    <!-- bootstrap -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      <!-- TITULO -->
+      <nav class="navbar navbar-expand-lg fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"> <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="50" /><span class="text-primary fs-4 ps-2">3P PLANNER</span></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <h4 class="text-white fs-2 fs-md-3">
+                  <div class="nav" id="nav-tab" role="tablist">
+                    <a class="nav-link" aria-current="page" href="#home">HOME</i></a>
+                    <a class="nav-link" aria-current="page" href="#planner">PLANNER</i></a>
+                    <a class="nav-link" aria-current="page" href="#destiny_mexico">DESTINY</i></a>                    
+                  </div>
+                </h4>
+            </div>
+            <form class="ps-lg-5">
+              <button class="btn btn-lg btn-outline-primary order-0" type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- section home -->
+      <section id="home" class="py-0">
+        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;background-size:contain;"></div>
+        <div class="container position-relative">
+          <div class="row align-items-center min-vh-75 my-lg-8">
+            <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
+              <h1 class="mb-4 display-1 lh-sm">Trip Planner</h1>
+              <p class="mt-4 mb-5 fs-1 lh-base">Plan your perfect trip and find the most important information about your chosen destinations.</p><a class="btn btn-lg btn-primary hover-top" href="#" role="button">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section home -->
+      <section id="planner" class="py-0" style="height: 600px; width: 100%;">
+        <div class="bg-holder" style="background-image:url(assets/img//gallery/booking.png);background-position:center;background-size:cover;">
+        </div>
+      </section>
+
+      <!-- <button onclick="toggleSessionShow('s_destiny_mexico')">show</button>
+      <button onclick="toggleSessionHide('s_destiny_mexico')">hide</button> -->
+
+      <!-- section destiny mexico -->
+      <!-- <section id="s_destiny_mexico" class="py-0 background-mexico" style="margin-top:115px; height: 600px; width: 100%;" hidden> -->
+        <section id="s_destiny_mexico" class="py-0 background-mexico" style="margin-top:115px; height: 600px; width: 100%;">
+        <div style="margin-left: 50px;">
+          <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_mexico.png" alt="" />&nbsp; MEXICO</h1>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CIDADES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CIDADE DO MÉXICO - COZUMEL - MELTEOTIHUACÁN - CANCÚN - RIVIERA MAYA - MÉRIDA - BAJA CALIFÓRNIA - PUEBLA - VERACRUZ - SIERRA MADRE - SAN CRISTÓBAL DE LAS CASAS - PALENQUE - SAN MIGUEL ALLENDE
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_piramide.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RUINAS E PIRAMIDES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TEOTUHUACÁN - CHICHÉN ITZA
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PARQUES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PARQUE FUNDIDORA  MONTERREY - PARQUE ECOARQUEOLÓGICO XCARET - BOSQUE DE CHAPULTEPEC
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_museu.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MUSEUS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MUSEU PALÁCIO DE BELAS ARTES - MUSEU FRIDA KAHLO E ESTÚDIO DIEGO RIVERA - MUSEU NACIONAL DE ANTROPOLOGIA - MUSEU DO TEMPLO MAYOR - MUSEU DAS MÚMIAS DE GUANAJUATO
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_igreja.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RELIGIOSIDADE</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CATEDRAL METROPOLITANA - BASÍLICA DE GUADALUPE - CATEDRAL METROPOLITANA
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_rotas.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>ROTAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;<strong>ROTA DA TEQUILA</strong> A REGIÃO DE GUADALAJARA, EM JALISCO, É CONHECIDA PELA PRODUÇÃO DA TEQUILA, BEBIDA TÍPICA DO MÉXICO</h1>
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_festa_mexico.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>FESTAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ZÓCALO DE OAXACA (DIA DE LOS MUERTOS) - BAIRRO POLANCO - BAIRRO CONDESA  - ROMA - PARQUE CHAPULTEPEC
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_restaurante.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>RESTAURANTES</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;ROSETTA, CAFÉ TACUBA, EL VILSITO, TACOS EL GÜERO, TICUCHI  (CIDADE MEXICO) - ARCA (TULUM) - FAUNA (VALLE GUADALUPE) - LA GUERRERENSE (ENSENADA) - PASILLO DE HUMO (OAXACA)
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_pratos_tipicos.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRATOS TIPICOS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;TAMALES - MOLE - CHILAQUILES - TACOS - MICHELADA -  ROSCA DEU REY - GUACAMOLE - CHILI COM CARNE - CHURROS
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_natureza.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>BELEZAS NATURAIS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;HIERVE EL ÁGUA - ARCO DE CABO SAN LUCAS - VULCÃO INATIVO MALINTZIN
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>PRAIA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CANCUN - ISLAS MUJERES - ISLA COZUMEL - ACAPULCO - ISLAS MARIETAS - TULUM - CABO SAN LUCAS - AKUMAL - PUERTO VALLARTA - ZIHUATANEJO
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_surf.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>SURF</u></strong> (JUNHO A AGOSTO)
+            &nbsp;&nbsp;&nbsp;&nbsp;BAJA CALIFORNIA (ENSENADA - CABOS) - NAYARIT (ISLITAS - STONER POINT - SAYULITA) - COLIMA (BOCA PASCUALES - CUYUTLÁN) - OAXACA (ZICATELA - BARRA CRUZ) - GUERRERO (TRONCONES)
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_mergulho.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MERGULHO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;MAR DE CORTÊS - PENÍNSULA DA BAIXA CALIFÓRNIA - COZUMEL - RIVIERA MAYA - ILHA DE GUADALUPE
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cultural.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CULTURAL</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;CENTRO HISTÓRICO DE GUADALAJARA
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_clima.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>CLIMA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;AMENO NA MAIORIA DO ANO - CHUVAS (JUNHO A NOVEMBRO) - PROBABILIDADE DE FURACÕES (SETEMBRO A NOVEMBRO)
+
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_identidade.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>DOCUMENTACAO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PASSAPORTE COM O MÍNIMO DE 6 MESES DE VALIDADE - BRASILEIROS NÃO PRECISAM DE VISTO
+          </h6>
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_vacinas.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>VACINAS</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp; NENHUMA VACINA OBRIGATÓRIA
+          </h6>
+
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_dinheiro.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>MOEDA</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;PESOS MEXICANOS - DÓLAR AMERICANO
+          </h6>
+          
+          <h6 style="color: black;">
+            <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_fusos_horarios.png"  alt="" width="20px" />
+            <strong>&nbsp;<u>FUSO HORÁRIO</u></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;4 FUSO HORÁRIOS DIFERENTES - SENDO GMT DA CIDADE DO MÉXICO É DE -5
+          </h6>
+        
+        </div>
+
+      </section>
+
+      <!-- section destiny argentina -->
+        <section id="s_destiny_argentina" class="py-0 background-argentina" style="margin-top:115px; height: 600px; width: 100%;">
+          <div style="margin-left: 50px;">
+            <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_argentina.png" alt="" />&nbsp; ARGENTINA</h1>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CIDADES</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;BUENOS AIRES, TIGRE, CÓRDOBA, SALTA, USHUAIA, BARILOCHE, MENDOZA, EL CALAFATE, MAR DEL PLATA
+            </h6>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>PARQUES</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PARQUE NACIONAL LOS GLACIARES, ACONCAGUA, GLACIAR UPSALA
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_yatch.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>BARCO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;EL CALAFATE, CATARATAS
+            </h6>
+
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_montanhas_neve.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>MONTANHAS MEVE</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;MONTANHA ANDES, GLACIAR PERITO MORENO, GELEIRA VINCIGUERRA
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>PRAIA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PRAIA MAR DEL PLATA, PLAYA VARESE, EL DORADILLO, PUNTA MOGOTES
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_esqui.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>ESQUI NEVE</u></strong> (JUNHO A SETEMBRO)
+              &nbsp;&nbsp;&nbsp;&nbsp;CHAPELCO, LAS LEÑAS, LA HOYA, CERRO CASTOR, CERRO CATEDRAL, CERRO BAYO, BARILOCHE
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cultural.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CULTURAL</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp; CEMITERIO RECOLETA, PALACIO BAROLO, MUSEU RIVER PLATE MUSEU BOCA JUNIORS, SENHOR TANGO, TEATRO ASTOR PIAZOLLA
+            </h6>
+            
+            <!-- <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_clima.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CLIMA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;AMENO NA MAIORIA DO ANO - CHUVAS (JUNHO A NOVEMBRO) - PROBABILIDADE DE FURACÕES (SETEMBRO A NOVEMBRO)
+  
+            </h6>
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_identidade.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>DOCUMENTACAO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PASSAPORTE COM O MÍNIMO DE 6 MESES DE VALIDADE - BRASILEIROS NÃO PRECISAM DE VISTO
+            </h6>
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_vacinas.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>VACINAS</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp; NENHUMA VACINA OBRIGATÓRIA
+            </h6>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_dinheiro.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>MOEDA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PESOS MEXICANOS - DÓLAR AMERICANO
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_fusos_horarios.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>FUSO HORÁRIO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;4 FUSO HORÁRIOS DIFERENTES - SENDO GMT DA CIDADE DO MÉXICO É DE -5
+            </h6> -->
+          
+          </div>
+  
+        </section>
+
+        <!-- section destiny portugal -->
+        <section id="s_destiny_portugal" class="py-0 background-portugal" style="margin-top:115px; height: 600px; width: 100%;">
+          <div style="margin-left: 50px;">
+            <h1 class="text-black fs-2 fs-sm-4 fs-lg-6 fw-bold"><img class="destiny-img-flag" src="assets/img/gallery/bandeira_portugal.png" alt="" />&nbsp; PORTUGAL</h1>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_cidade.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CIDADES</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;LISBOA, PORTO, COIMBRA, ALGARVE, LAGOS, FATIMA, FARO, BELMONTE, SINTRA, MARVÃO
+            </h6>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_parque.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>PARQUES</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;JARDIM BOTANICO, MONSERRATE, ARRABIDA, SERRAS DE AIRE, SERRA DE SÃO MAMEDE, DOURO, BARQUINHA, PAZ, EDUARDO VII
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_praia.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>PRAIA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;GALAPINHOS, GALÉ, MONTE GORDO, NAZARE, DONA ANA, BENAGIL, COSTA NOVA, PENICHE, SETUBAL, 
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_surf.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>SURF</u></strong> (JUNHO A SETEMBRO)
+              &nbsp;&nbsp;&nbsp;&nbsp;NAZARE, CARCAVELOS, FIGUEIRA DA FOZ, PENICHE, PEDRA BRANCA, REEF, AMADO
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_castelo.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CASTELO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp; PENA, TORRE BELEM, ALMOUROL, MOUROS, SINTRA, OBIDOS, SILVES, SEIXAS, SÃO JORGE, SANTA MARIA, TOMAR, GUIMARÃES
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_mosteiro.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>MOSTEIROS</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp; MOSTEIRO JERONIMOS, PALACIO PENA, TORRE BELEM, CASTELO ALMOUROL, CASTELO MOUROS, MOSTEIRO SANTA CRUZ, MOSTEIRO BATALHA, MUSEL AZULEJO, CONVENTO CARMO, IGREJA CLERIGOS, PALACIO SINTRA, LIVRARIA LELLO, HARD ROCK CAFE LISBOA,  GRUTA BENAGIL, VINHO TAYLORS, OCEANARIO LISBOA, PORTIMAO, VALE DOURO VINHO ALMOCO, FUNCHAL VER GOLFINHOS, DOURO WINE EXPERIENCE, ALMOCO QUINTA MORGADO, ADEGA CALEM , COCKBURNS PORTO LODGE VINHO,  GRAHAMS PORT LODG VINHO , ILHA BERLENGAS, 
+            </h6>
+            
+            <!-- <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_clima.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>CLIMA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;AMENO NA MAIORIA DO ANO - CHUVAS (JUNHO A NOVEMBRO) - PROBABILIDADE DE FURACÕES (SETEMBRO A NOVEMBRO)
+  
+            </h6>
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_identidade.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>DOCUMENTACAO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PASSAPORTE COM O MÍNIMO DE 6 MESES DE VALIDADE - BRASILEIROS NÃO PRECISAM DE VISTO
+            </h6>
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_vacinas.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>VACINAS</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp; NENHUMA VACINA OBRIGATÓRIA
+            </h6>
+  
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_dinheiro.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>MOEDA</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;PESOS MEXICANOS - DÓLAR AMERICANO
+            </h6>
+            
+            <h6 style="color: black;">
+              <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/destino_fusos_horarios.png"  alt="" width="20px" />
+              <strong>&nbsp;<u>FUSO HORÁRIO</u></strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;4 FUSO HORÁRIOS DIFERENTES - SENDO GMT DA CIDADE DO MÉXICO É DE -5
+            </h6> -->
+          
+          </div>
+  
+        </section>
+
+
+    </main>
+  
+    <!-- JavaScripts -->
+    <script>
+      function toggleSessionShow(el) {
+        document.getElementById(el).removeAttribute("hidden"); //to show
+        document.getElementById(el).style.display='block'; //to show
+      }
+      function toggleSessionHide(el) {
+        document.getElementById(el).style.display='none'; //to hide
+      }
+    </script>
+
+  </body>
+
+</html>

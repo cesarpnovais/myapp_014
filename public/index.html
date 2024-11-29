@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3P PLANNER</title>
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      <!-- TITULO -->
+      <nav class="navbar navbar-expand-lg fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"> <img class="d-inline-block align-top img-fluid" src="assets/img/gallery/logo-icon.png" alt="" width="50" /><span class="text-primary fs-4 ps-2">3P PLANNER</span></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                <h4 class="text-white fs-2 fs-md-3">
+                  <div class="nav" id="nav-tab" role="tablist">
+                    <a class="nav-link" aria-current="page" href="#home">HOME</i></a>
+                    <a class="nav-link" aria-current="page" href="#planner">PLANNER</i></a>
+                    <a class="nav-link" aria-current="page" href="#destiny_mexico">DESTINY</i></a>                    
+                  </div>
+                </h4>
+            </div>
+            <form class="ps-lg-5">
+              <button class="btn btn-lg btn-outline-primary order-0" type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- section home -->
+      <section id="home" class="py-0">
+        <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;background-size:contain;"></div>
+        <div class="container position-relative">
+          <div class="row align-items-center min-vh-75 my-lg-8">
+            <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
+              <h1 class="mb-4 display-1 lh-sm">Trip Planner</h1>
+              <p class="mt-4 mb-5 fs-1 lh-base">Plan your perfect trip and find the most important information about your chosen destinations.</p><a class="btn btn-lg btn-primary hover-top" href="#" role="button">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section home -->
+      <section id="planner">
+        <div class="bg-holder" style="background-image:url(assets/img//gallery/booking.png);background-position:center;background-size:cover;"></div>
+        <div class="container">
+          <div class="row min-vh-75">
+            <div class="col-12 text-white">
+              <div class="d-flex flex-column flex-center">
+                <h1 class="text-white fs-2 fs-sm-4 fs-lg-6 fw-bold">Define your itinerary</h1>
+              </div>
+              <template id="resultstemplate">
+                <option>America Do Norte</option>
+                <option>America Central</option>
+                <option>America do Sul</option>
+                <option>Europa</option>
+                <option>Africa</option>
+                <option>Asia</option>
+                <option>Oceania</option>
+                <!-- América do Norte -->
+                <option>Canadá</option>
+                <option>Estados Unidos</option>
+                <option>México</option>
+                <!-- América Central -->
+                <option>Equador</option>
+                <option>El Salvador</option>
+                <option>Guatemala</option>
+                <option>Guiana</option>
+                <option>Haiti</option>
+                <option>Honduras</option>
+                <option>Jamaica</option>
+                <option>México</option>
+                <option>Nicarágua</option>
+                <option>Panamá</option>
+                <option>República Dominicana</option>
+                <option>Costa Rica</option>
+                <option>Cuba</option>
+                <option>Suriname</option>
+                <option>Venezuela</option>
+                <!-- América Central -->
+                <option>Belize</option>
+                <option>Argentina</option>
+                <option>Bolívia</option>
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Colômbia</option>
+                <option>Uruguai</option>
+                <option>Paraguai</option>
+                <option>Peru</option>
+                <!-- Estados Brasil -->
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Cuiabá</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+                <!-- Estados Canada -->
+                <option>Ontário</option>
+                <option>Quebec</option>
+                <option>Novo Brunswick</option>
+                <option>Nova Escócia</option>
+                <option>Manitoba</option>
+                <option>Colúmbia Britânica</option>
+                <option>Ilha do Príncipe Eduardo</option>
+                <option>Saskatchewan</option>
+                <option>Alberta</option>
+                <option>Terra Nova e Labrador</option>
+                <!-- Estados Eua -->
+                <option>Alabama</option>
+                <option>Alasca</option>
+                <option>Arkansas</option>
+                <option>Arizona</option>
+                <option>Califórnia</option>
+                <option>Kansas</option>
+                <option>Carolina do Norte</option>
+                <option>Carolina do Sul</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Dakota do Norte</option>
+                <option>Dakota do Sul</option>
+                <option>Delaware</option>
+                <option>Flórida</option>
+                <option>Geórgia</option>
+                <option>Havai</option>
+                <option>Idaho</option>
+                <option>Rhode Island</option>
+                <option>Illinóis</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kentucky</option>
+                <option>Luisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississípi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>Nova Hampshire</option>
+                <option>Nova Jersey</option>
+                <option>Nova Iorque</option>
+                <option>Novo México</option>
+                <option>Oklahoma</option>
+                <option>Ohio</option>
+                <option>Oregon</option>
+                <option>Pensilvânia</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virgínia</option>
+                <option>Virgínia Ocidental</option>
+                <option>Washington</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+                <!-- Capitais Brasil -->
+                <option>São Luís</option>
+                <option>Goiânia</option>
+                <option>Vitória</option>
+                <option>Fortaleza</option>
+                <option>Manaus</option>
+                <option>Macapá</option>
+                <option>Rio Branco</option>
+                <option>Maceió</option>
+                <option>Salvador</option>
+                <option>Rio de Janeiro</option>
+                <option>Natal</option>
+                <option>Porto Alegre</option>
+                <option>Porto Velho</option>
+                <option>Boa Vista</option>
+                <option>Florianópolis</option>
+                <option>São Paulo</option>
+                <option>Aracaju</option>
+                <option>Palmas</option>
+                <option>Recife</option>
+                <option>Curitiba</option>
+                <option>Teresina</option>
+                <option>João Pessoa</option>
+                <option>Campo Grande</option>
+                <option>Belo Horizonte</option>
+                <option>Belém</option>
+              </template>
+              <form class="row gy-2 gx-md-2 gx-lg-4 flex-center my-1">
+                <div class="col-3 col-md-2">
+                  <h4 class="text-white fs-2 fs-md-3">destination</h4>
+                </div>
+                <div class="col-12 col-md-10">
+                  <h4 class="text-white fs-2 fs-md-3">&nbsp;</h4>
+                </div>            
+                <p>
+                <div class="col-3 col-md-2">
+                  <input class="form-select" type="text" name="searchDestination" id="searchDestination"  placeholder="" list="searchresults" autocomplete="off" />
+                  <datalist id="searchresults"></datalist>
+                </div>
+                <div class="col-12 col-md-10">
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <!-- <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4> -->
+                        <figcaption style="cursor: pointer;"> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                    <!-- The Modal -->
+                      <div id="myModalParis" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p><h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                            atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4></p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4>
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <!-- <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4> -->
+                        <figcaption> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-1">
+                    <img class="d-inline-block align-top img-fluid detail-places-img-button addButton detail-places-img-zoom" src="assets/img/places/paris.torre.eiffel.jpg"  onclick="myFunction(this)" alt="" width="20px"/>    
+                    <div class="nav img__wrap" id="nav-tab" >
+                      <figure>
+                        <!-- <h4><p class="img__description">PARIS<br>Paris é a capital da França e uma das cidades mais importantes e visitadas da Europa. Centro mundial de arte, moda, gastronomia e cultura, com mais de 2000 anos de história. Possui um clima Continental, com invernos frios e verões cálidos e sufocantes. 
+                          atrações turística Museu do Louvre, Torre Eiffel, Arco do Triunfo, Catedral de Notre Dame, Basilica de Sacré Coeur, Museu de Orsay, Jardim de Luxemburgo, Centro Georges Pompidou, Palácio de Versalhes, Sainte-Chapelle, Panteão, Catacumbas de Paris, entre muitas outras atrações. Como experiências na cidade, Faça um cruzeiro pelo Rio Sena, um tour de champanhe, visitar o mercado de pulgas, Visite uma Ópera, Jante em um restaurante com estrela Michelin, Participe de um workshop de perfumes.</p></h4> -->
+                        <figcaption style="cursor: pointer;"> &nbsp;&nbsp;&nbsp;paris</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <!-- PARIS, LYON, MARSELHA, TOULOUSE, NICE, VERSALHES, BORDEAUX, AVIGNON, ORLEANS, CHAMBORD, BLOIS, TOURS -->
+
+                  <!-- <img class="d-inline-block align-top img-fluid detail-places-img-button addButton" src="assets/img/gallery/destino_cidade.png"  onclick="mudaCorBorda(this)" alt="" width="20px" /> -->
+                    <!-- <h4 class="text-white fs-2 fs-md-3">
+                      <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-transport-link" id="nav-home-tab"    data-bs-toggle="tab" data-bs-target="#nav-home"     type="button" role="tab" aria-controls="nav-home"     aria-selected="false"> <i class="fas fa-light fa-car"></i></button>
+                        <button class="nav-transport-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"  type="button" role="tab" aria-controls="nav-profile"  aria-selected="false"> <i class="fa fa-plane"></i></button>
+                        <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fa fa-ship"></i></button>
+                        <button class="nav-transport-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"  type="button" role="tab" aria-controls="nav-contact"  aria-selected="false"> <i class="fas fa-light fa-train"></i></button>
+                      </div>
+                    </h4> -->
+                </div>               
+              </form>
+              <!-- <div class="d-flex flex-column flex-center">
+                <button class="nav-transport-link" id="nav-home-tab"    data-bs-toggle="tab" data-bs-target="#nav-home"     type="button" role="tab" aria-controls="nav-home"     aria-selected="false"> <i class="fa-regular fa-map-location-dot"> Generate </i></button>
+              </div> -->
+            </div>
+          </div>
+        </div>          
+      </section>
+    </main>
+    <!-- JavaScripts -->
+    <script type="text/javascript">
+      function toggleSessionShow(el) {
+        document.getElementById(el).removeAttribute("hidden"); //to show
+        document.getElementById(el).style.display='block'; //to show
+      }
+      function toggleSessionHide(el) {
+        document.getElementById(el).style.display='none'; //to hide
+      }
+
+      function myFunction(el) {
+        // rgb(255, 128, 128) 
+        if (el.style.borderColor == "black" ){          
+          el.style.borderColor = "white";
+        } else {
+          el.style.borderColor = "black";
+        }
+      }
+    </script>
+
+  </body>
+
+</html>
