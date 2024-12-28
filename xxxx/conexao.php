@@ -6,6 +6,9 @@
     error_reporting(E_ALL);
     $conexao = new MySQLi("localhost", "root", "root", "myapp_008");
     if (!$conexao) {die("Connection failed: " . mysqli_connect_error());}
+    
+    
+    
     $functionType = $_SESSION['sfunctionType'];
     $instructionSqlWhere = $_SESSION['sinstructionSqlWhere'];
     $recordCode = $_SESSION['srecordCode'];
